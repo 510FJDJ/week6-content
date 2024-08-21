@@ -1,0 +1,30 @@
+$utilities: map-merge(
+  $utilities, (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
+//字體不要響應式
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "rounded-top-left": (
+      property: border-top-left-radius,
+      class: rounded-top-left,
+      values: (
+        1: $border-radius-xl,
+      ),
+    ),
+    "rounded-bottom-right": (
+      property: border-bottom-right-radius,
+      class: rounded-bottom-right,
+      values: (
+        1: $border-radius-xl,
+      ),
+    ),
+  )
+);
+//圖片單一斜對角圓角
