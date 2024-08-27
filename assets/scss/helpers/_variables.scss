@@ -339,6 +339,7 @@ $theme-colors: (
   "primary-100":$primary-100,
   "primary-200":$primary-200,
   "primary-300":$primary-300,
+  "primary-400":$primary-400,
 
   "secondary-100":$accent-100,
   "secondary-200":$accent-200,
@@ -1426,8 +1427,8 @@ $card-group-margin:                 $grid-gutter-width * .5 !default;
 // Accordion
 
 // scss-docs-start accordion-variables
-$accordion-padding-y:                     1rem !default;
-$accordion-padding-x:                     1.25rem !default;
+$accordion-padding-y:                     4px !default;
+$accordion-padding-x:                     1rem !default;
 $accordion-color:                         var(--#{$prefix}body-color) !default;
 $accordion-bg:                            var(--#{$prefix}body-bg) !default;
 $accordion-border-width:                  var(--#{$prefix}border-width) !default;
@@ -1717,7 +1718,7 @@ $carousel-control-hover-opacity:     .9 !default;
 $carousel-control-transition:        opacity .15s ease !default;
 
 $carousel-indicator-width:           30px !default;
-$carousel-indicator-height:          3px !default;
+// $carousel-indicator-height:          3px !default;
 $carousel-indicator-hit-area-height: 10px !default;
 $carousel-indicator-spacer:          3px !default;
 $carousel-indicator-opacity:         .5 !default;
