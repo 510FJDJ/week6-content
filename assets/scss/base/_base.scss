@@ -31,10 +31,18 @@ p{
 .pt-sm-11{
     padding-top:250px;
 }
-
+.text-special{
+    color: #569573;
+  }
 @media(min-width: 768px) { 
     .border-bottom-lg{
         border-bottom: 1px solid $gray-500;
     }
-
+    
  }
+ 
+ @media(min-width: 992px){
+    .text-special{
+        color: #6E6B67; 
+    }
+  }
