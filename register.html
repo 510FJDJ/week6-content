@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+    <script type="module" crossorigin src="/week6-content/assets/main-d34a4b7d.js"></script>
+    <link rel="stylesheet" href="/week6-content/assets/main-bf456010.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container py-7 border-bottom-lg">
+          <a class="navbar-brand gray-800 fw-normal fs-lg-4 me-7" href="../pages/index.html">Vivre</a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mt-6" id="navbarSupportedContent">
+            <form class="d-flex me-auto bg-white py-4 px-6 align-items-center rounded-pill border border-grays-300 mb-sm-6" role="search"> 
+                <input background-color="transparent" class="form-control me-2 border-0 text-gray-500 bg-white fw-semibold" type="search" placeholder="搜尋文章" aria-label="Search"/>
+                <label class="bi bi-search text-secondary-200"></label>
+            </form>
+            <ul class="navbar-nav text-center">
+              <li class="nav-item me-lg-5 me-sm-0 mb-sm-6 py-2">
+                <a class="nav-link py-2 px-5" href="#">所有文章</a>
+              </li>
+              <li class="nav-item me-lg-5 me-sm-0 mb-sm-6 py-2">
+                <a class="nav-link py-2 px-5" href="#">訂閱方案</a>
+              </li>
+              <li class="nav-item me-lg-5 me-sm-0 mb-lg-6 py-2">
+                <a class="nav-link py-2 px-5" href="#">關於我們</a>
+              </li>
+              <a href="../pages/register.html">
+                <button type="button" class="btn btn-secondary-200 text-white mb-lg-6 py-">登入 / 註冊</button>
+              </a>
+              </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section class="container">
+      <div class="row py-9 py-lg-10">
+        <div class="col-lg-6 bg-white border border-primary-300 radious-1 p-lg-8 p-6 mx-auto">
+          <div class="text-secondary-200 fs-4 mb-6 mb-lg-8">註冊</div>
+          <div class="mb-6 mb-lg-8">
+            <div class="mb-4">
+              <label for="account" class="form-label">會員帳號</label>
+              <input type="text" class="form-control border-0 bg-gray-100" id="account" placeholder="請輸入會員帳號">
+            </div>
+            <div class="mb-4">
+              <label for="secret" class="form-label">密碼</label>
+              <input type="text" class="form-control border-0 bg-gray-100" id="secret" placeholder="請輸入密碼">
+            </div>
+            <div class="mb-6">
+              <label for="exampleFormControlInput1" class="form-label">電子信箱</label>
+              <input type="email" class="form-control border-0 bg-gray-100" id="exampleFormControlInput1" placeholder="請輸入電子信箱">
+            </div>
+            <a class="btn btn-secondary-200 text-white w-100" href="../pages/index.html" role="button">立即註冊<i class="bi bi-arrow-right ms-4"></i></a>
+          </div>
+          <div class="mb-6 mb-lg-8 text-center text-gray-300 position-relative line-content">
+            <p class="px-4 position-relative bg-white d-inline-block">或以其他方式註冊</p>
+          </div>
+          <div class="mb-6 mb-lg-8">
+            <a class="btn btn-gray-100 fw-semibold w-100 mb-2 d-flex justify-content-center align-items-center" href="#" role="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBtZM/T8JAGMafa4kQHSSMTCXRxMRBMK5GOjqYlNFJ/QAmTqyIg3HzIwCLjnQwrpToZqJFXRyMXYxOSmQAIuV8j9YGShv/RJ/k7tr33v7e5/4U+COxsAmeRRw2NMpQBgEJJvUmM2B9C+QCDulxE8EqQ0bRD2Q+iII+auCui3AZ7AzqcCDyBcSgUg0amxRfoTFLzSJHW36yB8KiXMCF/QkRH+bYOYGGHS/TnsnB+zRYGq/FFEj8AZc2cEqtw3NkXccP5DiS+2lwJlwBc7LBVrsjkGS+sRsGYJGI/rg/bzogLqWpc2YmWd2fzMEKYSD0eqI3pfEZHscv5DhitHmuodv3xALwNJLEwIsYdbhBgzJ4kZnp5IiJGl1CKfp63J7FUXtGhNSTnG4EVU7mrzWqWfWgkp16PshYg6UxFc291lLFhQhV16qa5odkSztZGkqeU4aygHiOhLSqFqeDv+LwXUigTknTFE8LVusthfu7ddh21OKsr46BXJhCsJoPNqZuJ2HdNLY9iNDIqek53aKbpBK9EgYRy5mKvWSGIWOOAtyl3SXRbwhrgmpRsSb+Ux8DMpnpdyeTfAAAAABJRU5ErkJggg==" alt="icons-google" class="me-4">使用 Google 註冊</a>
+            <a class="btn btn-gray-100 fw-semibold w-100 d-flex justify-content-center align-items-center" href="#" role="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBvVO9SsRAEJ7d5OQKD9MdJ4gRfABLKznxAbTTVvEKnyLJA1hfcYpoZ2djf/oE2sqBsTEICgFF1Euyzk6SY/N3P819ELIz+fbb2ZkvAPNC/cIz5TOJx8qSes9rCxAWgNjA0EjSPrJvahp3fg5b7kQh3vMsBpENYyCA21Gn5VQKVYkYCxxWG5zWjx9BqdhIqN71zKEePedFds06nG8ZJCaxfv0G7meYbI62g85KX671dMOwFll4TAGnm0skcvX0De5XCP6vUK6oYR8hK4TZPSi5krmo0fro3i+eEg+DENfbpfEaRaHSoWYoqTX0KsZgvwlmQxvFwfEyvfWz11J+XNEJ+SJT+wv2I22qhFzfeX/5/X7qKaUi9oB3bqfRzu079Wdw0KRYTqsANGi2IsqFDsyIEF1eEJJ+QF9MLUZc5Vfh6kcUs6cRkxzJVXM8T5KEMOBr2K9Lzpk6AJ8x1k/cbMOsEEKY8oF54R/eZYMUmIQwhAAAAABJRU5ErkJggg==" alt="icons-facebook" class="me-4">使用 facebook 註冊</a>
+          </div>
+            <p class="text-center">已經是會員了？<a href="../pages/login.html" class="text-secondary-200 ms-4">點此登入</a></p>
+          </div>
+      </div>
+    </section>
+    <footer class="container text-center">
+    <p class="text-primary-400 py-5 py-lg-6 fw-normal fw-lg-semibold border-top">©Vivre 2024 All right Reserved</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>
