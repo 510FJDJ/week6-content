@@ -6,12 +6,13 @@
 .lato-font{
     font-family: "Lato",sans-serif;
 }
-
 img{
     max-width: 100%;
     height: auto;
 }
-
+ul,li{
+    list-style: none;
+}
 a{
     // text-decoration: none; //更改變數link-decoration
     color:inherit;
@@ -44,5 +45,8 @@ p{
  @media(min-width: 992px){
     .text-special{
         color: #6E6B67; 
+    }
+    .fw-lg-semibold{
+        font-weight: 600;
     }
   }
