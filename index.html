@@ -7,9 +7,9 @@
     <title>index</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/week6-content/assets/main-1e6610f9.js"></script>
-    <link rel="stylesheet" href="/week6-content/assets/main-2b15b5f8.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/week6-content/assets/main-989a89b6.js"></script>
+    <link rel="stylesheet" href="/week6-content/assets/main-b862d600.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg ">
@@ -52,7 +52,7 @@
         </div>
       </div>
     </section>
-    <section class="theme container py-10">
+    <section class="theme container py-lg-10 py-8">
       <div class="fs-lg-2 fs-4 mb-6">熱門主題</div>
       <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-lg-6 g-2">
         <div class="col">
@@ -129,7 +129,7 @@
         </div>
       </div>
     </section>
-    <section class="article container py-10">
+    <section class="article container py-lg-10 py-8">
       <div class="fs-lg-2 fs-4 mb-6 mb-lg-0">精選文章</div>
       <div id="carouselExample"  class="carousel slide d-flex flex-lg-row-reverse align-items-lg-end justify-content-between flex-column align-items-start">
         <div class="carousel-inner m-0 d-flex flex-nowrap row g-lg-8 g-6 justify-content-end mb-8 mb-lg-0 ">
@@ -199,10 +199,414 @@
       </div>
       
     </section>
-    <footer class="footer">我是 footer</footer> 
+    <section class="see container py-lg-10 py-8">
+        <div class="fs-lg-2 fs-4 mb-6 mb-lg-8">大家都在看</div>
+      <div class="row ">
+        <div class="col-2 p-lg-6 bg-white rounded me-6 d-none d-lg-block">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action mb-6" id="list-liquor-list" data-bs-toggle="list" href="#list-liquor" role="tab" aria-controls="list-liquor">．酒精路跑地圖</a>
+            <a class="list-group-item list-group-item-action mb-6" id="list-taipei-list" data-bs-toggle="list" href="#list-taipei" role="tab" aria-controls="list-taipei">．台北拉麵圖鑑</a>
+            <a class="list-group-item list-group-item-action mb-6" id="list-sea-list" data-bs-toggle="list" href="#list-sea" role="tab" aria-controls="list-sea">．海島自由行</a>
+            <a class="list-group-item list-group-item-action mb-6" id="list-short-list" data-bs-toggle="list" href="#list-short" role="tab" aria-controls="list-short">．短天數出國推薦</a>
+            <a class="list-group-item list-group-item-action" id="list-week-list" data-bs-toggle="list" href="#list-week" role="tab" aria-controls="list-week">．週末露營趣</a>
+          </div>
+        </div>
+        <div id="carouselExampleAutoplaying" class="carousel slide col-lg-9 p-4 p-lg-8 bg-white rounded" data-bs-ride="carousel">
+          <div class="tab-content carousel-inner" id="nav-tabContent" >
+              <div class="carousel-item active tab-pane fade show active p-lg-6" id="list-liquor" role="tabpanel" aria-labelledby="list-liquor-list">
+                <div>
+                  <div class="see-content fs-5 fs-lg-4 text-secondary-200 mb-4 mb-lg-6">酒精路跑地圖</div>
+                <ul class="p-0">
+                  <li class="mb-2 mb-lg-5">
+                    <p>｜城市酒吧人氣榜,盤點當紅熱門酒吧</p>
+                  </li>
+                  <li class="mb-2 mb-lg-5">
+                    <p>｜你要的調酒師在這裡！五月全台酒吧客座活動整理</p>
+                  </li>
+                  <li>
+                    <p>｜台南老宅手工酒藏,尋味百年人文釀意</p>
+                  </li>
+                </ul>
+                </div>
+                <ul class="list-group list-group-horizontal py-4 w-100">
+                  <li class="list-group-item p-0 me-lg-1 w-sm-100">
+                    <picture>
+                      <source media="(min-width:992px )" srcset="/week6-content/assets/hots-1-4140643e.png ">
+                      <img src="/week6-content/assets/hots-1-sm-d41ead80.png" alt="hots-1-sm" class="radious-start-2 radious-1 w-100"/>
+                    </picture>
+                  </li>
+                  <li class="list-group-item p-0 me-lg-1 d-none d-lg-block"><img src="/week6-content/assets/hots-2-0511cb4f.png" alt="hots-2" class="rounded"/></li>
+                  <li class="list-group-item p-0 me-lg-1 d-none d-lg-block"><img src="/week6-content/assets/hots-3-1a547610.png" alt="hots-3" class="rounded"/></li>
+                  <li class="list-group-item p-0 d-none d-lg-block"><img src="/week6-content/assets/hots-4-ec19ac92.png" alt="hots-4" class="radious-end-2"/></li>
+                </ul>
+                <div class="see-tag py-lg-6 d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                  <ul class="d-flex py-2 mb-0 ps-0">
+                    <li class="bg-primary-300 text-primary-400 me-4 py-1 px-2 radious-1">＃夜貓行程</li>
+                    <li class="bg-primary-300 text-primary-400 me-4 py-1 px-2 radious-1">#barhopping</li>
+                    <li class="bg-primary-300 text-primary-400 py-1 px-2 radious-1">#全台酒吧</li>
+                  </ul>
+                  <div class="py-3">
+                    <a class="text-secondary-200 me-4" href="#" role="button">View More</a><i class="bi bi-arrow-right text-secondary-200"></i>
+                  </div>
+                  </div>
+              </div>
+              <div class="carousel-item show tab-pane fade p-lg-6" id="list-taipei" role="tabpanel" aria-labelledby="list-taipei-list">
+                <div>
+                  <div class="see-content fs-5 fs-lg-4 text-secondary-200 mb-4 mb-lg-6">台北拉麵圖鑑</div>
+                <ul class="p-0">
+                  <li class="mb-2 mb-lg-5">
+                    <p>｜城市酒吧人氣榜,盤點當紅熱門酒吧</p>
+                  </li>
+                  <li class="mb-2 mb-lg-5">
+                    <p>｜你要的調酒師在這裡！五月全台酒吧客座活動整理</p>
+                  </li>
+                  <li>
+                    <p>｜台南老宅手工酒藏,尋味百年人文釀意</p>
+                  </li>
+                </ul>
+                </div>
+                <ul class="list-group list-group-horizontal py-4 w-100">
+                  <li class="list-group-item p-0 me-lg-1 w-sm-100">
+                    <picture>
+                      <source media="(min-width:992px )" srcset="/week6-content/assets/hots-1-4140643e.png ">
+                      <img src="/week6-content/assets/hots-3-sm-5ceb5458.png" alt="hots-3-sm" class="radious-start-2 radious-1 w-100"/>
+                    </picture>
+                  </li>
+                  <li class="list-group-item p-0 me-lg-1 d-none d-lg-block"><img src="/week6-content/assets/hots-2-0511cb4f.png" alt="hots-2" class="rounded"/></li>
+                  <li class="list-group-item p-0 me-lg-1 d-none d-lg-block"><img src="/week6-content/assets/hots-3-1a547610.png" alt="hots-3" class="rounded"/></li>
+                  <li class="list-group-item p-0 d-none d-lg-block"><img src="/week6-content/assets/hots-4-ec19ac92.png" alt="hots-4" class="radious-end-2"/></li>
+                </ul>
+                <div class="see-tag py-lg-6 d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                  <ul class="d-flex py-2 mb-0 ps-0">
+                    <li class="bg-primary-300 text-primary-400 me-4 py-1 px-2 radious-1">#雞白湯</li>
+                    <li class="bg-primary-300 text-primary-400 me-4 py-1 px-2 radious-1">#拉麵</li>
+                    <li class="bg-primary-300 text-primary-400 py-1 px-2 radious-1">#台北美食</li>
+                  </ul>
+                  <div class="py-4">
+                    <a class="text-secondary-200 me-4" href="#" role="button">View More</a><i class="bi bi-arrow-right text-secondary-200"></i>
+                  </div>
+                  </div>
+              </div>
+              <div class="carousel-item show tab-pane fade p-lg-6" id="list-sea" role="tabpanel" aria-labelledby="list-sea-list">
+                <div>
+                  <div class="see-content fs-5 fs-lg-4 text-secondary-200 mb-4 mb-lg-6">海島自由行</div>
+                <ul class="p-0">
+                  <li class="mb-2 mb-lg-5">
+                    <p>｜私島慢活島嶼生活 - 在熱帶天堂品...</p>
+                  </li>
+                  <li class="mb-2 mb-lg-5">
+                    <p>｜海島漂流記 - 在陽光、沙灘和比基...</p>
+                  </li>
+                  <li>
+                    <p>｜島嶼蹤跡 - 揭開加勒比海上世外桃...</p>
+                  </li>
+                </ul>
+                </div>
+                <ul class="list-group list-group-horizontal py-4 w-100">
+                  <li class="list-group-item p-0 me-lg-1 w-sm-100">
+                    <picture>
+                      <source media="(min-width:992px )" srcset="/week6-content/assets/hots-1-4140643e.png ">
+                      <img src="/week6-content/assets/hots-4-sm-9226d072.png" alt="hots-4-sm" class="radious-start-2 radious-1 w-100"/>
+                    </picture>
+                  </li>
+                  <li class="list-group-item p-0 me-lg-1 d-none d-lg-block"><img src="/week6-content/assets/hots-2-0511cb4f.png" alt="hots-2" class="rounded"/></li>
+                  <li class="list-group-item p-0 me-lg-1 d-none d-lg-block"><img src="/week6-content/assets/hots-3-1a547610.png" alt="hots-3" class="rounded"/></li>
+                  <li class="list-group-item p-0 d-none d-lg-block"><img src="/week6-content/assets/hots-4-ec19ac92.png" alt="hots-4" class="radious-end-2"/></li>
+                </ul>
+                <div class="see-tag py-lg-6 d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                  <ul class="d-flex py-2 mb-0 ps-0">
+                    <li class="bg-primary-300 text-primary-400 me-4 py-1 px-2 radious-1">#熱帶國家</li>
+                    <li class="bg-primary-300 text-primary-400 me-4 py-1 px-2 radious-1">#海邊</li>
+                    <li class="bg-primary-300 text-primary-400 py-1 px-2 radious-1">#無敵海景</li>
+                  </ul>
+                  <div class="py-4">
+                    <a class="text-secondary-200 me-4" href="#" role="button">View More</a><i class="bi bi-arrow-right text-secondary-200"></i>
+                  </div>
+                  </div>
+              </div>
+              <div class="carousel-item show tab-pane fade p-lg-6" id="list-short" role="tabpanel" aria-labelledby="list-short-list">
+                <div>
+                  <div class="see-content fs-5 fs-lg-4 text-secondary-200 mb-4 mb-lg-6">短天數出國推薦</div>
+                <ul class="p-0">
+                  <li class="mb-2 mb-lg-5">
+                    <p>｜72小時東京遊走 - 當個時尚東京通</p>
+                  </li>
+                  <li class="mb-2 mb-lg-5">
+                    <p>｜48小時曼谷遊玩全攻略 </p>
+                  </li>
+                  <li>
+                    <p>｜三天兩夜賞櫻微醺東京</p>
+                  </li>
+                </ul>
+                </div>
+                <ul class="list-group list-group-horizontal py-4 w-100">
+                  <li class="list-group-item p-0 me-lg-1 w-sm-100">
+                    <picture>
+                      <source media="(min-width:992px )" srcset="/week6-content/assets/hots-1-4140643e.png ">
+                      <img src="/week6-content/assets/hots-5-sm-42a757ac.png" alt="hots-5-sm" class="radious-start-2 radious-1 w-100"/>
+                    </picture>
+                  </li>
+                  <li class="list-group-item p-0 me-lg-1 d-none d-lg-block"><img src="/week6-content/assets/hots-2-0511cb4f.png" alt="hots-2" class="rounded"/></li>
+                  <li class="list-group-item p-0 me-lg-1 d-none d-lg-block"><img src="/week6-content/assets/hots-3-1a547610.png" alt="hots-3" class="rounded"/></li>
+                  <li class="list-group-item p-0 d-none d-lg-block"><img src="/week6-content/assets/hots-4-ec19ac92.png" alt="hots-4" class="radious-end-2"/></li>
+                </ul>
+                <div class="see-tag py-lg-6 d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                  <ul class="d-flex py-2 mb-0 ps-0">
+                    <li class="bg-primary-300 text-primary-400 me-4 py-1 px-2 radious-1">#說走就走</li>
+                    <li class="bg-primary-300 text-primary-400 me-4 py-1 px-2 radious-1">#出國玩</li>
+                    <li class="bg-primary-300 text-primary-400 py-1 px-2 radious-1">#東亞</li>
+                  </ul>
+                  <div class="py-4">
+                    <a class="text-secondary-200 me-4" href="#" role="button">View More</a><i class="bi bi-arrow-right text-secondary-200"></i>
+                  </div>
+                  </div>
+              </div>
+              <div class="carousel-item show tab-pane fade p-lg-6" id="list-week" role="tabpanel" aria-labelledby="list-week-list">
+                <div>
+                  <div class="see-content fs-5 fs-lg-4 text-secondary-200 mb-4 mb-lg-6">週末露營趣</div>
+                <ul class="p-0">
+                  <li class="mb-2 mb-lg-5">
+                    <p>｜週末說走就走露營記</p>
+                  </li>
+                  <li class="mb-2 mb-lg-5">
+                    <p>｜城市野營日記</p>
+                  </li>
+                  <li>
+                    <p>｜和寵物去露營 - 大自然之旅的雙倍...</p>
+                  </li>
+                </ul>
+                </div>
+                <ul class="list-group list-group-horizontal py-4 w-100">
+                  <li class="list-group-item p-0 me-lg-1 w-sm-100">
+                    <picture>
+                      <source media="(min-width:992px )" srcset="/week6-content/assets/hots-1-4140643e.png ">
+                      <img src="/week6-content/assets/read-1-sm-01407a34.png" alt="read-1-sm" class="radious-start-2 radious-1 w-100"/>
+                    </picture>
+                  </li>
+                  <li class="list-group-item p-0 me-lg-1 d-none d-lg-block"><img src="/week6-content/assets/hots-2-0511cb4f.png" alt="hots-2" class="rounded"/></li>
+                  <li class="list-group-item p-0 me-lg-1 d-none d-lg-block"><img src="/week6-content/assets/hots-3-1a547610.png" alt="hots-3" class="rounded"/></li>
+                  <li class="list-group-item p-0 d-none d-lg-block"><img src="/week6-content/assets/hots-4-ec19ac92.png" alt="hots-4" class="radious-end-2"/></li>
+                </ul>
+                <div class="see-tag py-lg-6 d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                  <ul class="d-flex py-2 mb-0 ps-0">
+                    <li class="bg-primary-300 text-primary-400 me-4 py-1 px-2 radious-1">#戶外</li>
+                    <li class="bg-primary-300 text-primary-400 me-4 py-1 px-2 radious-1">#露營控</li>
+                    <li class="bg-primary-300 text-primary-400 py-1 px-2 radious-1">#凹豆</li>
+                  </ul>
+                  <div class="py-4">
+                    <a class="text-secondary-200 me-4" href="#" role="button">View More</a><i class="bi bi-arrow-right text-secondary-200"></i>
+                  </div>
+                  </div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="life container py-lg-10 py-8">
+      <div class="d-flex justify-content-between align-items-center mb-6 mb-lg-8">
+        <div class="fs-lg-2 fs-4">品味生活</div>
+      <div class="article-arrow align-items-center d-none d-lg-flex">
+        <button type="button" class="btn btn-outline-dark me-5 py-1 px-5" data-bs-target="#carouselExample" data-bs-slide="prev"><span class="bi bi-arrow-left" ></span></button>
+        <div class="d-flex align-items-center me-5" style="height: 32px"> 
+          <hr class="my-0" style="width: 80px">
+        </div>
+        <button type="button" class="btn btn-outline-dark py-1 px-5"  data-bs-target="#carouselExample" data-bs-slide="next"><span class="bi bi-arrow-right"></span></button>
+      </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3">
+        <div class="col d-flex flex-column align-items-center">
+          <div class="life-content d-flex flex-column justify-content-start w-100">
+            <div class="fs-1 fs-lg-7 text-primary-400 mb-6 mb-lg-7">食.</div>
+            <picture>
+              <source media="(min-width:992px )" srcset="/week6-content/assets/life-1-dc3e4076.png ">
+              <img src="/week6-content/assets/life-1-sm-8a01f225.png" alt="life-1-sm" class="mb-6 mb-lg-7 radious-1 w-100"/>
+            </picture>
+            <ul class="p-0 mb-6 mb-lg-7">
+              <li class="mb-5 fs-lg-5">
+                <p>｜米其林三星主廚的那些絕活傳奇</p>
+              </li>
+              <li class="mb-5 fs-lg-5">
+                <p>｜探秘成都的地道川味秘技與魅力</p>
+              </li>
+              <li class="fs-lg-5">
+                <p>｜義大利釀酒師對於酒的堅持執著</p>
+              </li>
+            </ul>
+          </div>
+          <div class="py-2">
+            <a class="text-secondary-200 me-4 fs-lg-5" href="#" role="button">View More</a><i class="bi bi-arrow-right text-secondary-200"></i>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center">
+          <div class="life-content d-flex flex-column justify-content-start w-100">
+            <div class="fs-1 fs-lg-7 text-primary-400 mb-6 mb-lg-7">藝.</div>
+            <picture>
+              <source media="(min-width:992px )" srcset="/week6-content/assets/life-2-e0514e49.png ">
+              <img src="/week6-content/assets/life-2-sm-2f266476.png" alt="life-2-sm" class="mb-6 mb-lg-7 radious-1 w-100"/>
+            </picture>
+            <ul class="p-0 mb-6 mb-lg-7">
+              <li class="mb-5 fs-lg-5">
+                <p>｜解構教主級時裝設計大師的獨特美學</p>
+              </li>
+              <li class="mb-5 fs-lg-5">
+                <p>｜當代攝影師鏡頭中的光影離奇</p>
+              </li>
+              <li class="fs-lg-5">
+                <p>｜帶你穿縮中世紀，夏季文藝復興展</p>
+              </li>
+            </ul>
+          </div>
+          <div class="py-2">
+            <a class="text-secondary-200 me-4 fs-lg-5" href="#" role="button">View More</a><i class="bi bi-arrow-right text-secondary-200"></i>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center">
+          <div class="life-content d-flex flex-column justify-content-start w-100">
+            <div class="fs-1 fs-lg-7 text-primary-400 mb-6 mb-lg-7">旅.</div>
+            <picture>
+              <source media="(min-width:992px )" srcset="/week6-content/assets/life-3-5b7bb55a.png ">
+              <img src="/week6-content/assets/life-3-sm-406b207e.png" alt="life-3-sm" class="mb-6 mb-lg-7 radious-1 w-100"/>
+            </picture>
+            <ul class="p-0 mb-6 mb-lg-7">
+              <li class="mb-5 fs-lg-5">
+                <p>｜遠離喧囂,偶探巴塔哥尼亞終界</p>
+              </li>
+              <li class="mb-5 fs-lg-5">
+                <p>｜東京深度六區,帶你細品極簡魅力</p>
+              </li>
+              <li class="fs-lg-5">
+                <p>｜專賣奇珍異寶的東歐地下夜市</p>
+              </li>
+            </ul>
+          </div>
+          <div class="py-2">
+            <a class="text-secondary-200 me-4 fs-lg-5" href="#" role="button">View More</a><i class="bi bi-arrow-right text-secondary-200"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sub bg-primary-200">
+      <div class="container py-lg-10 py-8 d-flex flex-column flex-lg-row justify-content-between align-items-center">
+        <div class="row sub-content d-flex flex-column mb-9 mb-lg-0">
+          <div class="col">
+            <div class="fs-6 fs-lg-5 text-gray-400 mb-4 text-center text-lg-start">今天又不知道要去哪裡了嗎？</div>
+          <div class="fs-4 fs-lg-2 mb-6 mb-lg-7 text-center">Vivre <span class="d-block d-lg-inline">給你意想不到的生活風格提案</span></div>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="mailto:wuy0951@gmail.com" class="btn btn-secondary-200 text-white py-4 px-6" role="button">馬上訂閱<span class="bi bi-arrow-right ms-4"></span></a>
+          </div>
+          </div>
+        </div>
+        <div class="sub-photo col d-none d-lg-block">
+          <ul class="row justify-content-lg-end">
+            <li class="col-lg-6 mt-lg-10" style="max-width: 306px;">
+              <div class="position-relative">
+                <img src="/week6-content/assets/projects-1-1192f106.png" alt="projects-1">
+                <a href="#" class="position-absolute d-flex py-2 px-4 top-0 start-0 ms-5 translate-middle-y bg-white border border-secondary-100 radious-1 text-secondary-300"><i class="bi bi-caret-right-fill"></i>人氣行程</a>
+                <a href="#" class="position-absolute d-flex px-4 pt-4 pb-5 justify-content-between w-100 bottom-0 start-0 text-white bg-black-linear" style="width: 100%; box-sizing: border-box;">
+                  <p>親子露營要帶什麼?</p><i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </li>
+            <li class="col-lg-6" style="max-width: 306px;">
+              <div class="position-relative">
+                <img src="/week6-content/assets/projects-2-28f2afc5.png" alt="projects-2"/>
+                <a href="#" class="position-absolute d-flex py-2 px-4 top-0 start-0 ms-5 translate-middle-y bg-white border border-secondary-100 radious-1 text-secondary-300"><i class="bi bi-caret-right-fill"></i>編輯推薦</a>
+                <a href="#" class="position-absolute d-flex px-4 pt-4 pb-5 justify-content-between w-100 bottom-0 start-0 text-white bg-black-linear" style="width: 100%; box-sizing: border-box;">
+                  <p>山女孩的健行筆記</p><i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </li>
+            <li class="col-lg-6 mt-lg-8" style="max-width: 306px;">
+              <div class="position-relative">
+                <img src="/week6-content/assets/projects-3-6cd4e17c.png" alt="projects-3"/>
+                <a href="#" class="position-absolute d-flex py-2 px-4 top-0 start-0 ms-5 translate-middle-y bg-white border border-secondary-100 radious-1 text-secondary-300"><i class="bi bi-caret-right-fill"></i>編輯推薦</a>
+                <a href="#" class="position-absolute d-flex px-4 pt-4 pb-5 justify-content-between w-100 bottom-0 start-0 text-white bg-black-linear" style="width: 100%; box-sizing: border-box;">
+                  <p>質感房間改造攻略！</p><i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </li>
+            <li class="col-lg-6" style="max-width: 306px;">
+              <div class="position-relative">
+                <img src="/week6-content/assets/projects-4-c31b35a0.png" alt="projects-4"/>
+                <a href="#" class="position-absolute d-flex py-2 px-4 top-0 start-0 ms-5 translate-middle-y bg-white border border-secondary-100 radious-1 text-secondary-300"><i class="bi bi-caret-right-fill"></i>熱門文章</a>
+                <a href="#" class="position-absolute d-flex px-4 pt-4 pb-5 justify-content-between w-100 bottom-0 start-0 text-white bg-black-linear" style="width: 100%; box-sizing: border-box;">
+                  <p>適合溜小孩的海邊景點推薦</p><i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="carouselExample" class="carousel slide d-lg-none w-100" data-bs-ride="carousel" data-bs-interval="2400">
+          <div class="carousel-inner" style="overflow: visible;">
+            <div class="carousel-item active">
+              <div class="position-relative">
+                <img src="/week6-content/assets/projects-1-1192f106.png" alt="projects-1" class="w-100">
+                <a href="#" class="position-absolute d-flex py-2 px-4 top-0 start-0 ms-5 translate-middle-y bg-white border border-secondary-100 radious-1 text-secondary-300" ><i class="bi bi-caret-right-fill"></i>人氣行程</a>
+                <a href="#" class="position-absolute d-flex px-4 pt-4 pb-5 justify-content-between w-100 bottom-0 start-0 text-white bg-black-linear" style="width: 100%; box-sizing: border-box;">
+                  <p>親子露營要帶什麼?</p><i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="position-relative">
+                <img src="/week6-content/assets/projects-2-28f2afc5.png" alt="projects-2" class="w-100">
+                <a href="#" class="position-absolute d-flex py-2 px-4 top-0 start-0 ms-5 translate-middle-y bg-white border border-secondary-100 radious-1 text-secondary-300" ><i class="bi bi-caret-right-fill"></i>編輯推薦</a>
+                <a href="#" class="position-absolute d-flex px-4 pt-4 pb-5 justify-content-between w-100 bottom-0 start-0 text-white bg-black-linear" style="width: 100%; box-sizing: border-box;">
+                  <p>質感房間改造攻略！</p><i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="position-relative">
+                <img src="/week6-content/assets/projects-3-6cd4e17c.png" alt="projects-3" class="w-100">
+                <a href="#" class="position-absolute d-flex py-2 px-4 top-0 start-0 ms-5 translate-middle-y bg-white border border-secondary-100 radious-1 text-secondary-300" ><i class="bi bi-caret-right-fill"></i>編輯推薦</a>
+                <a href="#" class="position-absolute d-flex px-4 pt-4 pb-5 justify-content-between w-100 bottom-0 start-0 text-white bg-black-linear" style="width: 100%; box-sizing: border-box;">
+                  <p>山女孩的健行筆記</p><i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="position-relative">
+                <img src="/week6-content/assets/projects-4-c31b35a0.png" alt="projects-4" class="w-100">
+                <a href="#" class="position-absolute d-flex py-2 px-4 top-0 start-0 ms-5 translate-middle-y bg-white border border-secondary-100 radious-1 text-secondary-300" ><i class="bi bi-caret-right-fill"></i>熱門文章</a>
+                <a href="#" class="position-absolute d-flex px-4 pt-4 pb-5 justify-content-between w-100 bottom-0 start-0 text-white bg-black-linear" style="width: 100%; box-sizing: border-box;">
+                  <p>適合溜小孩的海邊景點推薦</p><i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact container pl-lg-10 py-8">
+      <div>
+        <div class="d-flex justify-content-between align-items-center mb-7 mb-lg-4 flex-column flex-lg-row">
+          <div class="fs-4 fs-lg-2 text-gray-800 fw-bold mb-4 mb-lg-0">想看什麼主題由你決定！</div>
+          <div class="fs-5 fs-lg-4 text-gray-800 fw-semibold">歡迎投稿與我們分享</div>
+        </div>
+        <div class="d-flex justify-content-center justify-content-lg-end">
+          <a href="mailto:wuy0951@gmail.com" class="btn btn-secondary-200 text-white py-4 px-6" role="button">聯絡我們</a>
+      
+        </div>
+          </div>
+    </section>
+
+    <footer class="container text-center">
+    <p class="text-primary-400 py-5 py-lg-6 fw-normal fw-lg-semibold">©Vivre 2024 All right Reserved</p>
+    </footer> 
 
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  </body>
+
+
+
+
+
+
+
+
+
+</body>
 </html>
