@@ -4,7 +4,7 @@ const swiper = new Swiper(".mySwiper", {
    slidesPerGroup:2,
    // ***(一次呈現幾張),
    // ***(一個群組內有幾張投影片),
-   spaceBetween: 48,
+   spaceBetween: 6,
    // ***(分頁),
    pagination: {
      el:".swiper-pagination-custom",
@@ -14,4 +14,7 @@ const swiper = new Swiper(".mySwiper", {
          nextEl: ".swiper-next",
          prevEl: ".swiper-prev",
        },
+       renderBullet: function (index, className) {
+        return '<span class="' + ".text-gray-300" + '">' + (index + 1) + '</span>';
+      }
  });
