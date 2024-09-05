@@ -60,6 +60,12 @@ height: 448px;
 .only-staff {
   background: #e8e3da;
 }
+.swiper-pagination-custom{
+  color:$gray-500;
+}
+.swiper-pagination-current,.swiper-pagination-total{
+  color:$gray-800;
+}
 @media(min-width: 768px){
   .radious-1{
     border-radius: 4px;

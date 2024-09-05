@@ -1,10 +1,16 @@
 import './assets/scss/all.scss';
+
+// import Swiper JS
+// import Swiper from 'swiper';
+// import Swiper styles
+import 'swiper/css';
+
 const swiper = new Swiper(".mySwiper", {
-   slidesPerView: 1,
+   slidesPerView: 2,
    slidesPerGroup:2,
    // ***(一次呈現幾張),
    // ***(一個群組內有幾張投影片),
-   spaceBetween: 6,
+   spaceBetween: 48,
    // ***(分頁),
    pagination: {
      el:".swiper-pagination-custom",
@@ -14,7 +20,4 @@ const swiper = new Swiper(".mySwiper", {
          nextEl: ".swiper-next",
          prevEl: ".swiper-prev",
        },
-       renderBullet: function (index, className) {
-        return '<span class="' + ".text-gray-300" + '">' + (index + 1) + '</span>';
-      }
  });
