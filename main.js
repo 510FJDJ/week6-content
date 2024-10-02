@@ -10,8 +10,11 @@ const swiper = new Swiper(".mySwiper", {
    slidesPerGroup:2,
    // ***(一次呈現幾張),
    // ***(一個群組內有幾張投影片),
-   spaceBetween: 48,
-   // ***(分頁),
+   spaceBetween: 24,
+   autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
    pagination: {
      el:".swiper-pagination-custom",
      type: "fraction"
@@ -20,4 +23,14 @@ const swiper = new Swiper(".mySwiper", {
          nextEl: ".swiper-next",
          prevEl: ".swiper-prev",
        },
+       breakpoints: {
+        992: {
+          slidesPerView: 2, // 較大螢幕的設置
+        },
+        0: {
+          slidesPerView: 1, // 手機版的設置，顯示一個內容
+        },
+      },
+      mousewheel: true,
+      keyboard: true,
  });
