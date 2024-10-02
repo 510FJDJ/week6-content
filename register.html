@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>register</title>
-    <script type="module" crossorigin src="/week6-content/assets/main-59ca8eb1.js"></script>
-    <link rel="stylesheet" href="/week6-content/assets/main-e3db36b3.css">
+    <script type="module" crossorigin src="/week6-content/assets/main-09721581.js"></script>
+    <link rel="stylesheet" href="/week6-content/assets/main-ae4740c8.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg ">
@@ -15,30 +15,42 @@
           <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse mt-6" id="navbarSupportedContent">
-            <form class="d-flex me-auto bg-white py-4 px-6 align-items-center rounded-pill border border-grays-300 mb-sm-6" role="search"> 
-                <input background-color="transparent" class="form-control me-2 border-0 text-gray-500 bg-white fw-semibold" type="search" placeholder="搜尋文章" aria-label="Search"/>
-                <label class="bi bi-search text-secondary-200"></label>
+          <div class="collapse navbar-collapse mt-lg-0 mt-6 justify-content-between" id="navbarSupportedContent">
+            <form class="d-flex align-items-center position-relative mb-lg-0 mb-6" role="search"> 
+              <input id="search" class="bg-white py-4 px-6 rounded-pill form-control border border-grays-300 text-gray-500 fw-semibold" type="search" placeholder="搜尋文章" aria-label="Search" />
+              <button type="button" id="search-btn" class="btn btn-sm bi bi-search text-secondary-200 position-absolute end-0 top-50 translate-middle-y" style="margin-right: 6%;"></button>
             </form>
-            <ul class="navbar-nav text-center">
-              <li class="nav-item me-lg-5 me-sm-0 mb-sm-6 py-2">
+            <ul class=" navbar-nav text-center align-items-center">
+              <li class=" nav-item me-lg-5 me-sm-0 mb-lg-0 mb-6 py-2">
                 <a class="nav-link py-2 px-5" href="#">所有文章</a>
               </li>
-              <li class="nav-item me-lg-5 me-sm-0 mb-sm-6 py-2">
+              <li class=" nav-item me-lg-5 me-sm-0 mb-lg-0 mb-6 py-2">
                 <a class="nav-link py-2 px-5" href="#">訂閱方案</a>
               </li>
-              <li class="nav-item me-lg-5 me-sm-0 mb-lg-6 py-2">
+              <li class=" nav-item me-lg-5 me-sm-0 py-2 mb-lg-0 mb-6">
                 <a class="nav-link py-2 px-5" href="#">關於我們</a>
               </li>
-              <a href="./register.html">
-                <button type="button" class="btn btn-secondary-200 text-white mb-lg-6 py-">登入 / 註冊</button>
-              </a>
-              </ul>
+
+              <li class="nav-item w-100 d-block d-lg-none"> 
+                <a href="./register.html" class="w-100">
+                  <button type="button" class="btn btn-secondary-200 text-white w-100">登入 / 註冊</button>
+                </a>
+              </li>
+              <li class="nav-item d-none d-lg-block"> 
+                <a href="./register.html">
+                  <button type="button" class="btn btn-secondary-200 text-white">登入 / 註冊</button>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
     </nav>
 
-    <section class="container">
+    <script>
+      document.getElementById('search-btn').addEventListener('click', function() {
+        document.getElementById('search').focus();
+      });
+    </script>    <section class="container">
       <div class="row py-9 py-lg-10">
         <div class="col-lg-6 bg-white border border-primary-300 radious-1 p-lg-8 p-6 mx-auto">
           <div class="text-secondary-200 fs-4 mb-6 mb-lg-8">註冊</div>
@@ -49,7 +61,7 @@
             </div>
             <div class="mb-4">
               <label for="secret" class="form-label">密碼</label>
-              <input type="text" class="form-control border-0 bg-gray-100" id="secret" placeholder="請輸入密碼">
+              <input type="password" class="form-control border-0 bg-gray-100" id="secret" placeholder="請輸入密碼">
             </div>
             <div class="mb-6">
               <label for="exampleFormControlInput1" class="form-label">電子信箱</label>
