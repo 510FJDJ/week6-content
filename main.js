@@ -34,3 +34,25 @@ const swiper = new Swiper(".mySwiper", {
       mousewheel: true,
       keyboard: true,
  });
+ const swiper2 = new Swiper(".seeSwiper", {
+  slidesPerView: 1,
+  slidesPerGroup:1,
+  // ***(一次呈現幾張),
+  // ***(一個群組內有幾張投影片),
+  spaceBetween: 24,
+  autoplay: {
+   delay: 4000,
+   disableOnInteraction: false
+ },
+     mousewheel: true,
+     keyboard: true,
+});
+
+ const listItems = document.querySelectorAll('.list-group-item');
+   listItems.forEach((item) => {
+   item.addEventListener('click', function(event) {
+     event.preventDefault();
+     const slideIndex = parseInt(this.getAttribute('data-slide'), 10);
+     swiper2.slideTo(slideIndex);
+   });
+ });

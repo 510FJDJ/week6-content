@@ -180,17 +180,17 @@
         <div class="fs-lg-2 fs-4 mb-6 mb-lg-8">大家都在看</div>
       <div class="row ">
         <div class="col-2 p-lg-6 bg-white rounded me-6 d-none d-lg-block">
-          <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action mb-6" id="list-liquor-list" data-bs-toggle="list" href="#list-liquor" role="tab" aria-controls="list-liquor">．酒精路跑地圖</a>
-            <a class="list-group-item list-group-item-action mb-6" id="list-taipei-list" data-bs-toggle="list" href="#list-taipei" role="tab" aria-controls="list-taipei">．台北拉麵圖鑑</a>
-            <a class="list-group-item list-group-item-action mb-6" id="list-sea-list" data-bs-toggle="list" href="#list-sea" role="tab" aria-controls="list-sea">．海島自由行</a>
-            <a class="list-group-item list-group-item-action mb-6" id="list-short-list" data-bs-toggle="list" href="#list-short" role="tab" aria-controls="list-short">．短天數出國推薦</a>
-            <a class="list-group-item list-group-item-action" id="list-week-list" data-bs-toggle="list" href="#list-week" role="tab" aria-controls="list-week">．週末露營趣</a>
+          <div class="list-group">
+            <a class="list-group-item list-group-item-action mb-6" data-slide="0">．酒精路跑地圖</a>
+            <a class="list-group-item list-group-item-action mb-6" data-slide="1">．台北拉麵圖鑑</a>
+            <a class="list-group-item list-group-item-action mb-6" data-slide="2" >．海島自由行</a>
+            <a class="list-group-item list-group-item-action mb-6" data-slide="3">．短天數出國推薦</a>
+            <a class="list-group-item list-group-item-action" data-slide="4" >．週末露營趣</a>
           </div>
         </div>
-        <div id="carouselExampleAutoplaying" class="carousel slide col-lg-9 p-4 p-lg-8 bg-white rounded" data-bs-ride="carousel">
-          <div class="tab-content carousel-inner" id="nav-tabContent" >
-              <div class="carousel-item active tab-pane fade show active p-lg-6" id="list-liquor" role="tabpanel" aria-labelledby="list-liquor-list">
+        <div class=" swiper2 seeSwiper col-lg-9 p-4 p-lg-8 bg-white rounded" style="overflow-x: hidden;">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide p-lg-6">
                 <div>
                   <div class="see-content fs-5 fs-lg-4 text-secondary-200 mb-4 mb-lg-6">酒精路跑地圖</div>
                 <ul class="p-0">
@@ -227,7 +227,7 @@
                   </div>
                   </div>
               </div>
-              <div class="carousel-item show tab-pane fade p-lg-6" id="list-taipei" role="tabpanel" aria-labelledby="list-taipei-list">
+              <div class="swiper-slide p-lg-6">
                 <div>
                   <div class="see-content fs-5 fs-lg-4 text-secondary-200 mb-4 mb-lg-6">台北拉麵圖鑑</div>
                 <ul class="p-0">
@@ -264,7 +264,7 @@
                   </div>
                   </div>
               </div>
-              <div class="carousel-item show tab-pane fade p-lg-6" id="list-sea" role="tabpanel" aria-labelledby="list-sea-list">
+              <div class="swiper-slide p-lg-6">
                 <div>
                   <div class="see-content fs-5 fs-lg-4 text-secondary-200 mb-4 mb-lg-6">海島自由行</div>
                 <ul class="p-0">
@@ -301,7 +301,7 @@
                   </div>
                   </div>
               </div>
-              <div class="carousel-item show tab-pane fade p-lg-6" id="list-short" role="tabpanel" aria-labelledby="list-short-list">
+              <div class="swiper-slide p-lg-6" >
                 <div>
                   <div class="see-content fs-5 fs-lg-4 text-secondary-200 mb-4 mb-lg-6">短天數出國推薦</div>
                 <ul class="p-0">
@@ -338,7 +338,7 @@
                   </div>
                   </div>
               </div>
-              <div class="carousel-item show tab-pane fade p-lg-6" id="list-week" role="tabpanel" aria-labelledby="list-week-list">
+              <div class="swiper-slide p-lg-6">
                 <div>
                   <div class="see-content fs-5 fs-lg-4 text-secondary-200 mb-4 mb-lg-6">週末露營趣</div>
                 <ul class="p-0">
