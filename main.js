@@ -41,7 +41,7 @@ const swiper = new Swiper(".mySwiper", {
   // ***(一個群組內有幾張投影片),
   spaceBetween: 24,
   autoplay: {
-   delay: 4000,
+   delay: 3000,
    disableOnInteraction: false
  },
      mousewheel: true,
@@ -56,3 +56,25 @@ const swiper = new Swiper(".mySwiper", {
      swiper2.slideTo(slideIndex);
    });
  });
+
+ const swiper3 = new Swiper(".extendSwiper", {
+  slidesPerView: 1,
+  slidesPerGroup:1,
+  // ***(一次呈現幾張),
+  // ***(一個群組內有幾張投影片),
+  spaceBetween: 24,
+  autoplay: {
+   delay: 3000,
+   disableOnInteraction: false
+ },
+ breakpoints: {
+  992: {
+    slidesPerView: 1, // 較大螢幕的設置
+  },
+  0: {
+    slidesPerView: 1, // 手機版的設置，顯示一個內容
+  },
+},
+     mousewheel: true,
+     keyboard: true,
+});
