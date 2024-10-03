@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>article</title>
+    <script type="module" crossorigin src="/week6-content/assets/main-d59a8758.js"></script>
+    <link rel="stylesheet" href="/week6-content/assets/main-3a9b3406.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-0">
+        <div class="container py-7">
+          <a class="navbar-brand gray-800 fw-normal fs-lg-4 me-7" href="./index.html">Vivre</a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mt-lg-0 mt-6 justify-content-between" id="navbarSupportedContent">
+            <form class="d-flex align-items-center position-relative mb-lg-0 mb-6" role="search"> 
+              <input id="search" class="bg-white py-4 px-6 rounded-pill form-control border border-grays-300 text-gray-500 fw-semibold" type="search" placeholder="搜尋文章" aria-label="Search" />
+              <button type="button" id="search-btn" class="btn btn-sm bi bi-search text-secondary-200 position-absolute end-0 top-50 translate-middle-y" style="margin-right: 6%;"></button>
+            </form>
+            <ul class=" navbar-nav text-center align-items-center">
+              <li class=" nav-item me-lg-5 me-sm-0 mb-lg-0 mb-6 py-2">
+                <a class="nav-link py-2 px-5" href="./subArticle.html">所有文章</a>
+              </li>
+              <li class=" nav-item me-lg-5 me-sm-0 mb-lg-0 mb-6 py-2">
+                <a class="nav-link py-2 px-5" href="./subscription.html">訂閱方案</a>
+              </li>
+              <li class=" nav-item me-lg-5 me-sm-0 py-2 mb-lg-0 mb-6">
+                <a class="nav-link py-2 px-5" href="#">關於我們</a>
+              </li>
+
+              <li class="nav-item w-100 d-block d-lg-none"> 
+                <a href="./register.html" class="w-100">
+                  <button type="button" class="btn btn-secondary-200 text-white w-100">登入 / 註冊</button>
+                </a>
+              </li>
+              <li class="nav-item d-none d-lg-block"> 
+                <a href="./register.html">
+                  <button type="button" class="btn btn-secondary-200 text-white">登入 / 註冊</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <script>
+      document.getElementById('search-btn').addEventListener('click', function() {
+        document.getElementById('search').focus();
+      });
+    </script>    
+    <section class="my-lg-10 mt-4 mb-9">
+      <div class="container">
+        <p class="mb-2 mb-lg-5">首頁 <span class="mx-2">/</span> <span class="text-secondary-200">訂閱方案</span></p>
+        <div class="fs-3 fs-lg-1 fw-bold mb-8 mb-lg-9">訂閱方案</div>
+        <div class="d-flex flex-column justify-content-center">
+          <div class="row d-flex justify-content-center mb-6 mb-lg-8">
+            <div class="col-lg-2 col-sm-6">
+              <p class="btn-square">年繳</p>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <p class="btn-square">月繳</p>
+            </div>
+          </div>
+          <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1">
+            <div class="col mb-6 mb-lg-0">
+              <div class="card-rounded d-flex justify-content-between align-items-center">
+                <p class="fs-lg-5 mb-4">輕量型</p>
+                <div class="fw-bold pb-lg-8 mb-7 mb-lg-9 "><span class="fs-2 fs-lg-1 card-rounded-price">NT 99</span> <span class="fs-lg-4 fs-5 ms-4 text-gray-300">/ 月</span></div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">每月最新文章無限閱讀</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">專屬會員限定內容</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">定期電子報</p>
+                  </div>
+                </div>
+                <a class="btn-rounded w-100 mt-auto" href="#" role="button">我要訂閱<i class="bi bi-arrow-right ms-4"></i></a>
+          
+              </div>
+            </div>
+            <div class="col mb-6 mb-lg-0">
+              <div class="card-rounded d-flex justify-content-between align-items-center">
+                <p class="fs-lg-5 mb-4">玩咖型</p>
+                <div class="fw-bold pb-lg-8 mb-7 mb-lg-9"><span class="fs-2 fs-lg-1 card-rounded-price">NT 159</span><span class="fs-lg-4 fs-5 ms-4 text-gray-300">/ 月</span></div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">每月最新文章無限閱讀</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">專屬會員限定內容</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">定期電子報</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">年度精選禮物</p>
+                  </div>
+                </div>
+                <a class="btn-rounded w-100 mt-auto" href="#" role="button">我要訂閱<i class="bi bi-arrow-right ms-4"></i></a>
+          
+              </div>
+            </div>
+            <div class="col">
+              <div class="card-rounded d-flex justify-content-between align-items-center">
+                <p class="fs-lg-5 mb-4">家庭型</p>
+                <div class="fw-bold pb-4"><span class="fs-2 fs-lg-1 card-rounded-price">NT 599 </span><span class="fs-lg-4 fs-5 ms-4 text-gray-300">/ 月</span></div>
+                <div class="fs-5 fs-lg-6 text-gray-300 text-decoration-line-through mb-7 mb-lg-9">NT 899</div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">每月最新文章無限閱讀</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">專屬會員限定內容</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">定期電子報</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">年度精選禮物</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">24/7 優先客戶服務</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">為每個成員量身打造專屬行程</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-start w-100 mb-6">
+                  <div class="d-flex align-items-center justify-content-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    <p class="fs-lg-5">最多 5 個家庭成員共享</p>
+                  </div>
+                </div>
+                <a class="btn-rounded w-100 mt-auto" href="#" role="button">我要訂閱<i class="bi bi-arrow-right ms-4"></i></a>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="container text-center">
+    <p class="text-primary-400 py-5 py-lg-6 fw-normal fw-lg-semibold border-top">©Vivre 2024 All right Reserved</p>
+    </footer> 
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    
+</body>
+</html>
