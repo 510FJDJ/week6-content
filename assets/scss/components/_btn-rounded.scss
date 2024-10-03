@@ -1,0 +1,28 @@
+$gray-100:#F8F9FA;
+$gray-400: #6C757D;
+$primary-300:#E8E3DA;
+$secondary-200:#569573;
+
+.btn-rounded{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color:$gray-400;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    border-radius: 100px;
+    background-color: $gray-100;
+    &:hover{
+        background-color: $secondary-200;
+        color:$white;
+    }
+    &.active{
+        background-color: $secondary-200;
+        color:$white;
+    }
+
+    @media (min-width:992px){
+        padding-top: 16px;
+    padding-bottom: 16px;
+    }
+}

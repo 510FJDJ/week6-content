@@ -78,3 +78,10 @@ const swiper = new Swiper(".mySwiper", {
      mousewheel: true,
      keyboard: true,
 });
+
+$(document).ready(function() {
+  $('.btn-square').on('click', function() {
+    $('.btn-square').removeClass('active');
+    $(this).addClass('active');
+  });
+});

@@ -1,0 +1,32 @@
+$gray-400: #6C757D;
+$gray-500: #343A40;
+$primary-300:#E8E3DA;
+$secondary-200:#569573;
+
+.card-rounded{
+    padding: 24px;
+    color:$gray-400;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid $primary-300;
+    background-color: #fff;
+    height: 100%;
+    flex-direction: column;
+    .card-rounded-price{
+        color:$secondary-200;
+    }
+    &:hover{
+        border-color: $secondary-200;
+        color:$gray-500;
+    }
+    &.active{
+        border-color: $secondary-200;
+        color:$gray-500;
+    }
+    
+    @media (min-width:992px){
+        padding: 40px;
+    }
+}
