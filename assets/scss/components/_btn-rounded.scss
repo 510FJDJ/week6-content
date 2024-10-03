@@ -13,10 +13,12 @@ $secondary-200:#569573;
     border-radius: 100px;
     background-color: $gray-100;
     &:hover{
+        border-color:none;
         background-color: $secondary-200;
         color:$white;
     }
     &.active{
+        border-color:none;
         background-color: $secondary-200;
         color:$white;
     }

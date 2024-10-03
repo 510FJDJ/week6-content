@@ -298,7 +298,7 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
+$primary:       #569573 !default;
 $secondary:     $gray-600 !default;
 
 // $success:       $green !default;
@@ -687,7 +687,7 @@ $font-weight-bolder:          900 !default;
 // $font-weight-bolder:          bolder !default;
 
 // $font-weight-base:            $font-weight-normal !default;
-$font-weight-base:            $font-weight-medium !default;
+$font-weight-base:            $font-weight-semibold !default;
 
 $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;

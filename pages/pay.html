@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pay</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <section class="my-lg-10 mt-4 mb-9">
+      <div class="container">
+        <p class="mb-2 mb-lg-5 py-4"><a href="./index.html">首頁</a> <span class="mx-2">/</span> <a href="./subscription.html">訂閱方案</a> <span class="mx-2">/</span><span class="text-secondary-200">付款</span></p>
+        <div class="fs-3 fs-lg-1 fw-bold mb-8 mb-lg-9">付款</div>
+        <div class="row">
+          <div class="col-lg-7 d-flex flex-column">
+            <div class="d-flex flex-column p-6 p-lg-8 bg-white rounded-4 border border-primary-300 mb-6">
+              <div class="fs-5 fs-lg-6 fw-bold mb-6 mb-lg-8">購買人</div>
+              <div class="mb-4">
+                <label for="account" class="form-label">姓名</label>
+                <input type="text" class="form-control border-0 bg-gray-100" id="account" placeholder="請輸入姓名">
+              </div>
+              <div class="mb-4">
+                <label for="secret" class="form-label">密碼</label>
+                <input type="password" class="form-control border-0 bg-gray-100" id="secret" placeholder="請輸入密碼">
+              </div>
+              <div class="mb-6">
+                <label for="exampleFormControlInput1" class="form-label">電子信箱</label>
+                <input type="email" class="form-control border-0 bg-gray-100" id="exampleFormControlInput1" placeholder="請輸入電子信箱">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  記住我的資訊
+                </label>
+              </div>
+            </div>
+            <div class="d-flex flex-column p-6 p-lg-8 bg-white rounded-4 border border-primary-300 mb-6">
+              <div class="fs-5 fs-lg-6 fw-bold mb-6 mb-lg-8">付款方式</div>
+              <div class="mb-4 mb-lg-8">
+                <label for="account" class="form-label fw-bold">Pay With</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    信用卡
+                  </label>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="secret" class="form-label">信用卡號碼</label>
+                <input type="text" class="form-control border-0 bg-gray-100" id="secret" placeholder="1234 5678 1234 5678">
+              </div>
+              <div class="mb-6 d-flex justify-content-between">
+                <div class=" me-6">
+                  <label for="exdate" class="form-label">過期日</label>
+                  <input type="text" class="form-control border-0 bg-gray-100" id="exdate" placeholder="ＭＭ/YY">
+                </div>
+                <div>
+                  <label for="authcode" class="form-label">認證碼</label>
+                  <input type="text" class="form-control border-0 bg-gray-100" id="authcode" placeholder="CVV">
+                </div>
+                </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  記住卡片資訊
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="d-flex flex-column p-6 p-lg-8 bg-white rounded-4 border border-secondary-200 mb-6">
+              <div class="fs-5 fs-lg-6 fw-bold mb-6 mb-lg-8 text-secondary-200">訂單資訊</div>
+              <div class="d-flex flex-column py-6 border-top border-bottom border-gray-200 mb-6 mb-lg-8">
+                <div class="d-flex justify-content-between text-gray-600 mb-4">
+                  <p class="fs-lg-5">輕量型方案</p>
+                  <p class="fs-lg-5">NT 1,188</p>
+                </div>
+                <p class="text-gray-400">年繳</p>
+              </div>
+              <div class="mb-4">
+                  <label for="discode" class="form-label text-gray-500 mb-4">折扣碼</label>
+                  <div class="d-flex">
+                    <input type="text" class="form-control border-0 bg-gray-100 me-4" id="discode" placeholder="請輸入折扣碼">
+                    <button class="btn btn-gray-100 text-gray-300 px-4 px-lg-5 text-nowrap" type="submit">套用</button>
+                  </div>
+              </div>
+              <div class="d-flex flex-column py-6 border-top border-bottom border-gray-200 mb-6 mb-lg-8">
+                <div class="d-flex justify-content-between text-gray-500 mb-4">
+                  <p>小計</p>
+                  <p class="fs-lg-5">NT 1,188</p>
+                </div>
+                <div class="d-flex text-gray-500 justify-content-between">
+                  <p>折扣</p>
+                <p>0</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-6 mb-lg-8">
+                <p class="text-gray-500">總計</p>
+                <div class="fs-4 fs-lg-2 text-gray-600 fw-bold">NT 1,188</div>
+              </div>
+              <a class="btn-rounded w-100 mt-auto active" href="./pay success.html" role="button">立即付款<i class="bi bi-arrow-right ms-4"></i></a>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <%- include('./layout/footer'); -%> 
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    
+</body>
+</html>
